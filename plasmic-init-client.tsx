@@ -3,6 +3,7 @@
 import { PlasmicRootProvider } from '@plasmicapp/loader-nextjs';
 import { PLASMIC } from './plasmic-init';
 import { HelloWorld } from './components/HelloWorld';
+import { swiperTest} from './components/swiperTest'
 
 // ...
 
@@ -12,6 +13,13 @@ PLASMIC.registerComponent(HelloWorld, {
     verbose: 'boolean',
     children: 'slot'
   }
+});
+
+PLASMIC.registerComponent(swiperTest, {
+    name: 'SwiperTest',
+    props: {
+        className: 'string'
+    }
 });
 // You can register any code components that you want to use here; see
 // https://docs.plasmic.app/learn/code-components-ref/
