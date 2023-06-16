@@ -4,15 +4,15 @@ export const PLASMIC = initPlasmicLoader({
     {
       id: "eYrbo7rex7kTK7jfgmqGEH",  // ID of a project you are using
       token: "VWs0I0w2H0pIm9ykD26xY3PkpR5WuTv41pIPP2eIxOJbwd2TzV06XYL3rMJ264RPCejQXaNF32J8W7yRig",  // API token for that project
-      
-      version:
-        process.env.NODE_ENV === 'production'
-          ? 'prod'
-          : process.env.NODE_ENV === 'development'
-          ? 'staging'
-          : // If not production or staging, then just use the latest
+      version: 'production'
+      // version:
+      //   process.env.NODE_ENV === 'production'
+      //     ? 'prod'
+      //     : process.env.NODE_ENV === 'development'
+      //     ? 'staging'
+      //    :  If not production or staging, then just use the latest
             // published version, regardless of tags
-            undefined
+            // undefined
     }
   ],
   // different things
