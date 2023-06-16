@@ -15,6 +15,7 @@ export const PLASMIC = initPlasmicLoader({
             undefined
     }
   ],
+  // different things
   // Fetches the latest revisions, whether or not they were unpublished!
   // Disable for production to ensure you render only published changes.
   preview: false,
